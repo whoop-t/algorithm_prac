@@ -19,7 +19,7 @@ const validAnagram = (str1, str2) => {
     let letter = str1[i];
     lookup[letter] ? (lookup[letter] += 1) : (lookup[letter] = 1);
   }
-  //loop over second string, check if its in the lookup[ object]
+  //loop over second string, check if its in the lookup[object]
   for (let i = 0; i < str2.length; i++) {
     let letter = str2[i];
     if (!lookup[letter]) {
